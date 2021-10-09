@@ -35,8 +35,8 @@ int main() {
   int hr_out = honers_rule<int>(x, x.size(), 0, 3); 
   std::cout << hr_out << std::endl;
 
-  std::cout << "========== maximum subarray ===========" << std::endl;
-  std::vector<int> change{13, 3, 25, 20, 3, 16, 23, 18, 20, 7, 12, 5, 22, 15, 4, 7};
-  std::tuple<int, int, int> set = maximum_subarray<int>(change, 0, change.size());
-  std::cout << std::get<0>(set) << " " << std::get<1>(set) << " " << std::get<2>(set) << std::endl;
+  std::cout << "========== quick sort ===========" << std::endl;
+  std::vector<int> x_quick{5, 2, 4, 6, 1, 3, 9};
+  sa.quick_sort<int>(x_quick); 
+  for (int& i: x_quick) { std::cout << i << "\n"; }
 }
